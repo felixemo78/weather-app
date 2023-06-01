@@ -16,7 +16,7 @@ function Home() {
   const [name, setName] = useState("");
   const handleClick = () => {
     if (name !== "") {
-      const apiUrl = `http://api.weatherapi.com/v1/current.json?key=e086a1e94e9a427495401446233005&q=${name}`;
+      const apiUrl = `https://api.weatherapi.com/v1/current.json?key=e086a1e94e9a427495401446233005&q=${name}`;
       fetch(apiUrl)
         .then((response) => response.json())
         .then((data) => {
